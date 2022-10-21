@@ -1,0 +1,105 @@
+*{
+    margin: 0;padding: 0;list-style: none;
+    font-family:"poppins ";
+}
+/** 清除内外边距 **/
+body{
+    
+    background: linear-gradient(to right,#333399,#ff00cc) ;
+
+}
+
+.container{
+    width: 1066px;
+    height: 600px;
+    background-color: rgb(255, 255, 255,50%);
+    margin: 200px auto;
+    position: relative;
+    border-radius: 20px;
+    
+  
+}
+.video-box{
+    width: 889px;
+    height: 500px;
+    background-color: black;
+    margin: auto ;
+    position:absolute;
+    left: 88px;
+    top: 50px;
+
+
+
+}
+video{
+    width: 889px;
+    height: 500px;
+    position: absolute;
+    
+
+}
+button{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 280px;
+    font-size: 30px;
+ 
+    text-align: center;
+   
+}
+#nav1{
+    background: #fff;
+    border-radius: 50px;
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0 25px  20px -20px rgba(0, 0, 0,40%);
+    position: relative;
+    top: 50px;
+    left: 15%;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px 40px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+
+}
+nav ul li::after{
+    content:"";
+    background-color: #b12fcb;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s,opacity 0.5s;
+   
+
+}
+nav ul li:hover{
+    color: #fff;
+
+}
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+
+}
+
+
